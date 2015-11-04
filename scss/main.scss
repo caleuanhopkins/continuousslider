@@ -1,0 +1,104 @@
+#what{
+        nav{
+            &.theTabs{
+                ul{
+
+                    border-bottom:1px solid $color-light-grey;
+
+                    li{
+
+                        margin-bottom:-1px;
+
+                        a{
+
+                            display:block;
+                            text-align:center;
+                            @include rem-fallback(padding, 25, 30);
+                            text-transform: uppercase;
+                            @include rem-fallback(font-size, 18);
+                            font-weight: $medium;
+                            color:$color-light-blue;
+                            background:$color-white;
+                            transition: all 150ms ease;
+
+                            &:hover{
+                                background:$color-light-blue;
+                                color:$color-white;                               
+                            }
+
+                            &.active{
+                                background:$color-light-blue;
+                                color:$color-white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .theSlides{
+
+            @include rem-fallback(padding-top, 60);
+            overflow:hidden;
+            position:relative;
+            height:350px;
+
+            .slide{
+
+                display:table;
+                float:left;
+                position:absolute;
+
+                &.slide1{
+                    left:0;
+                }
+
+                &.slide2{
+                    left:100%;
+                }
+
+                &.slide3{
+                    left:200%;
+                }
+
+                figure{
+                    display:table-cell;
+                    text-align:center;
+                    float:none;
+                    vertical-align: middle;
+
+                    img{
+                        @include rem-fallback(margin-top, 25);
+                        width:50%;
+                    }
+                }
+
+                article{
+                    display:table-cell;
+                    float:none;
+                    vertical-align: middle;
+                    @include rem-fallback(padding-right, 50);
+
+                    ul, li{
+                        list-style:outside disc;
+                    }
+
+                    ul{
+
+                         @include rem-fallback(margin-left, 20);
+
+                        li{
+                            display:list-item;
+                             @include rem-fallback(margin-bottom, 25);
+
+                             &:last-child{
+                                margin-bottom:0;
+                             }
+                        }
+                    }
+                }
+
+            }
+
+        }       
+    }
