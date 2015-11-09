@@ -11,6 +11,7 @@
 		<title>Continuous Slider</title>
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/main.min.css" />
+		<link rel="stylesheet" href="css/required.min.css" />
 		<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -18,33 +19,42 @@
 	</head>
 
 	<body>
-		<div id="what" class="container">
-			<div class="fourteen col clearing centered">
-				<div class="slider whole centered gapless clearing">
-					<nav class="theTabs whole centered col">
-						<ul class="whole clearing gapless">
-							<li class="third gapless left"><a href="#" onclick="whatSlider(1,this); return false;" class="active whole gapless">slide1</a></li>
-							<li class="third gapless left"><a href="#" onclick="whatSlider(2,this); return false;" class="whole gapless">slide2</a></li>
-							<li class="third gapless left"><a href="#" onclick="whatSlider(3,this); return false;" class="whole gapless">slide3</a></li>
-						</ul>
-					</nav>
-					<section class="theSlides">
-						<div class="slide whole slide1 active">
-							<p>slide1</p>
-						</div>
-						<div class="slide whole slide2">
-							<p>slide2</p>
-						</div>
-						<div class="slide whole slide3">
-							<p>slide3</p>
-						</div>
-					</section>
+
+		<div id="cs-slider">
+			<nav class="cs-slide-tabs">
+				<ul>
+					<li class="left"><a href="#" class="active">slide1</a></li>
+					<li class="left"><a href="#">slide2</a></li>
+					<li class="left"><a href="#">slide3</a></li>
+				</ul>
+			</nav>
+			<div class="cs-slides-area">
+				<div class="cs-slide active">
+					<p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+
+					<p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+
+					<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service</p>
+				</div>
+
+				<div class="cs-slide">
+					<p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+
+					<p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+				</div>
+
+				<div class="cs-slide">
+					<p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
 				</div>
 			</div>
-			<hr/>
 		</div>
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="slider.js"></script>
+		<script src="js/slider.min.js"></script>
+		<script>
+			$('#cs-slider').contSlider({
+				liquidHeight: true
+			});
+		</script>
 	</body>
 </html>

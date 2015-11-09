@@ -1,0 +1,44 @@
+/**
+*   Colors
+**/
+/**
+*   Font Setup
+**/
+/**
+*   Functions
+**/
+/**
+*   PAGE
+**/
+html, body, body, button, h1, h2, h3, h4, h5, h6, input, input[type="button"], input[type="reset"], input[type="submit"], label, select, ul, li, ol, p, span, strong, a {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 16;
+  font-weight: 400;
+  color: #575756;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+#cs-slider {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto; }
+  #cs-slider .cs-slide-tabs ul {
+    padding: 20px 0; }
+    #cs-slider .cs-slide-tabs ul li {
+      width: 33%;
+      float: left;
+      display: block;
+      text-align: center; }
+      #cs-slider .cs-slide-tabs ul li a {
+        text-decoration: none; }
+        #cs-slider .cs-slide-tabs ul li a:hover {
+          text-decoration: underline; }
+  #cs-slider .cs-slides-area {
+    clear: both; }
+    #cs-slider .cs-slides-area .cs-slide p {
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 50px;
+      display: block; }

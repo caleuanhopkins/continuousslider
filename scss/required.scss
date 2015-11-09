@@ -1,0 +1,21 @@
+#cs-slider{
+    .cs-slides-area{
+
+        overflow:hidden;
+        position:relative;
+
+        .cs-slide{
+            left:100%;
+            width:100%;
+
+            &.slide-pos{
+                position:absolute;
+            }
+
+            &:first-of-type{
+                left:0;
+            }
+        }
+
+    }       
+}
