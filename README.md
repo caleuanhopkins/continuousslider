@@ -1,4 +1,5 @@
 #Continous Slider
+[![Build Status](https://api.travis-ci.org/caleuanhopkins/continuousslider.svg?branch=master)](https://travis-ci.org/caleuanhopkins/continuousslider)
 
 A simple slider that adds a contintous sliding slider to your html. A small time-filler project, welcome to any pull requests for improvements.
 
