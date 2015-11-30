@@ -12,7 +12,6 @@
 
             slideZone.find(options.slideClass).each(function(i, obj){
             	heights[i] = obj.scrollHeight;
-            	obj.classList.add('slide-pos');
             });
 
             if(options.liquidHeight){

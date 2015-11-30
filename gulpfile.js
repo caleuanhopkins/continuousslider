@@ -52,6 +52,7 @@ gulp.task('scripts', function() {
     return gulp.src(
             'js/slider.js'
         )
+        .pipe(uglify())
         .pipe(rename('slider.min.js'))
         .pipe(gulp.dest('js'))
         .pipe(notify({ message: 'Scripts task complete' }));
