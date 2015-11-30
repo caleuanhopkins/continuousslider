@@ -72,4 +72,5 @@ gulp.task('connect', function() {
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'scripts', 'connect', 'watch']);
+// Watch task removed for travis.ci. Add back in at the end of the list of tasks if you want gulp to auto updated your assets
+gulp.task('default', ['lint', 'sass', 'scripts', 'connect']);
