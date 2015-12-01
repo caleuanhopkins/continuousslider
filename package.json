@@ -1,11 +1,11 @@
 {
-  "name": "Frontier-Splash-Page",
+  "name": "Continuousslider",
   "version": "0.1.0",
-  "description": "Frontier - Splash Page",
+  "description": "Continuous Slider - a small jQuery plugin for continuous sliding slides",
   "repository": {
     "type": "git"
   },
-  "author": "WGPSN",
+  "author": "Callum Hopkins",
   "license": "ISC",
   "devDependencies": {
     "ansi-regex": "^1.1.1",
