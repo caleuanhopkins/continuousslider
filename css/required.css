@@ -1,0 +1,14 @@
+#cs-slider .cs-slides-area {
+  overflow: hidden;
+  position: relative;
+}
+#cs-slider .cs-slides-area .cs-slide {
+  left: 100%;
+  width: 100%;
+}
+#cs-slider .cs-slides-area .cs-slide.slide-pos {
+  position: absolute;
+}
+#cs-slider .cs-slides-area .cs-slide:first-of-type {
+  left: 0;
+}
